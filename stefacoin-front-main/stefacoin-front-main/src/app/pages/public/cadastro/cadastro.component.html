@@ -1,0 +1,42 @@
+<div class="box">
+  <form [formGroup]="cadastroForm" (ngSubmit)="inclui()">
+    <div class="mb-3">
+      <label for="nome" class="form-label">Nome</label>
+      <input
+        type="text"
+        formControlName="nome"
+        class="form-control"
+        id="nome"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input
+        type="text"
+        formControlName="email"
+        class="form-control"
+        id="email"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="senha" class="form-label">Senha</label>
+      <input
+        type="text"
+        formControlName="senha"
+        class="form-control"
+        id="senha"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="tipo" class="form-label">Tipo</label>
+      <input
+        type="number"
+        formControlName="tipo"
+        class="form-control"
+        id="tipo"
+      />
+    </div>
+    
+    <button type="submit" class="btn btn-primary mr-5">Cadastrar</button>
+  </form>
+</div>
